@@ -42,3 +42,9 @@ You should edit the following properties in the `pom.xml` file to configure the 
     
 </project>
 ```
+
+To build the library simply run the following command:
+
+```shell
+mvn clean package
+```
