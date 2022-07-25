@@ -13,6 +13,9 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
         <sketchbook.location>${user.home}/Documents/Processing</sketchbook.location>
         <processing.core.jar.location>/Applications/Processing.app/Contents/Java/core/library/core.jar
         </processing.core.jar.location>
@@ -88,7 +91,7 @@
 
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>2.6</version>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <id>copy-data</id>
@@ -101,7 +104,6 @@
                             <resources>
                                 <resource>
                                     <directory>${project.basedir}/data</directory>
-                                    <filtering>true</filtering>
                                 </resource>
                             </resources>
                         </configuration>
@@ -117,7 +119,6 @@
                             <resources>
                                 <resource>
                                     <directory>${project.basedir}/examples</directory>
-                                    <filtering>true</filtering>
                                 </resource>
                             </resources>
                         </configuration>
@@ -133,7 +134,6 @@
                             <resources>
                                 <resource>
                                     <directory>${project.basedir}/lib</directory>
-                                    <filtering>true</filtering>
                                 </resource>
                             </resources>
                         </configuration>
@@ -149,7 +149,6 @@
                             <resources>
                                 <resource>
                                     <directory>${project.basedir}/src</directory>
-                                    <filtering>true</filtering>
                                 </resource>
                             </resources>
                         </configuration>
